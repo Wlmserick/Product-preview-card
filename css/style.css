@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.col{
+    width:500px;
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.row{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    max-width:100%;
+    height: auto;
+}
+
+.info{
+    text-align: left;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.name{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    text-align: left;
+    margin:0 20px 20px;
+}
+
+.des{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    margin:0 20px 20px;
+    font-size: 14px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    margin:0 20px 20px;
+    gap: 20px;
+}
+
+.new-price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.text{
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+}
+.old-price{
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 10px;
+    font-weight: 500;
+}
+button{
+    display: flex;
+    padding: 10px 20px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 4px;
+    border-style: none;
+    width: 200px;
+    margin:0 20px 20px;
+    gap: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(158, 81%, 20%)
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-align: center;
+   
+}
+
+.attribution a::after {
+    color: blue;
+}
+@media (max-width: 375px) {
+    .col {
+        margin: 10px; 
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .col {
+        width: 300px; 
+    }
+}
